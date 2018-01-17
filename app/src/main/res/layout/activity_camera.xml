@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_camera"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.pastelstudio.hilal13.cameraapi.CameraActivity">
+<TextView
+    android:id="@+id/tvPreview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Preview"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+    android:textSize="15dp"/>
+<!-- Display Image yang diambil -->
+<ImageView
+    android:id="@+id/imgPreview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:visibility="gone"
+    android:layout_below="@+id/tvPreview"/>
+<!-- Untuk mengambil Image/Gambar -->
+<Button
+    android:id="@+id/btnCapture"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Take a Picture"
+    android:layout_marginBottom="10dp"
+    android:layout_below="@+id/imgPreview"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>
